@@ -22,12 +22,12 @@ BEGIN
 			card_brand NVARCHAR(50),
 			card_type NVARCHAR(50),
 			card_number NVARCHAR(50),
-			expires DATE,
+			expires NVARCHAR(50),
 			cvv INT,
 			has_chip NVARCHAR(50),
 			num_cards_issued INT,
-			credit_limit DECIMAL(10,3),
-			acct_open_date DATE,
+			credit_limit NVARCHAR(50),
+			acct_open_date NVARCHAR(50),
 			year_pin_last_changed DATE,
 			card_on_dark_web NVARCHAR(50));
 
@@ -44,16 +44,16 @@ BEGIN
 			address NVARCHAR(MAX),
 			latitude DECIMAL(10,2),
 			longitude DECIMAL(10,2),
-			per_capita_income DECIMAL(10,3),
-			yearly_income DECIMAL(10,3),
-			total_debt DECIMAL(10,3),
+			per_capita_income NVARCHAR(50),
+			yearly_income NVARCHAR(50),
+			total_debt NVARCHAR(50),
 			credit_score INT,
 			num_credit_cards INT);
 
 
-	IF OBJECT_ID('bronze.transaction_date','U') IS NOT NULL
-		DROP TABLE bronze.transaction_date;
-	CREATE TABLE bronze.transaction_date (
+	IF OBJECT_ID('bronze.transactions_data','U') IS NOT NULL
+		DROP TABLE bronze.transaction_data;
+	CREATE TABLE bronze.transactions_data (
 			id INT,
 			date DATE,
 			client_id INT,
