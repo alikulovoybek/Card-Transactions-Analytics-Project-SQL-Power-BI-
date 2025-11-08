@@ -1,3 +1,13 @@
+/*********************************************************************
+Script Name   : create_tables
+Script Schema : Silver
+Author        : Oybek Alikulov
+
+Script Purpose: 
+	Creates tables for Silver Layer.
+    Performs full refresh (drop and recreate) each time.
+    Adds 'dwh_create_date' column for load timestamp.
+*********************************************************************/
 CREATE OR ALTER PROCEDURE silver.create_tables AS
 BEGIN
 	PRINT '******************'
