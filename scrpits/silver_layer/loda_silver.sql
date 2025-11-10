@@ -1,3 +1,13 @@
+/*************************************************************************
+Script Name    : load_silver
+Author         : Oybek Alikulov
+
+Script Purpose :
+	 This stored procedure is responsible for manipulating all source tables
+    and inserting data into the Silver layer tables using a full load approach
+    (truncate and insert). TABLOCK is also used to improve load performance.
+*************************************************************************/
+
 CREATE OR ALTER PROCEDURE load_silver AS
 BEGIN
 	PRINT'========================================================='
@@ -11,7 +21,7 @@ BEGIN
 		SET @start_transforming=GETDATE();
 		SET @start_time=GETDATE();
 		TRUNCATE TABLE silver.cards_data;
-		INSERT INTO silver.cards_data(
+		INSERT INTO silver.cards_data WITH(TABLOCK) (
 			id,
 			client_id,
 			card_brand,
@@ -57,7 +67,7 @@ BEGIN
 
 		SET @start_time=GETDATE();
 		TRUNCATE TABLE silver.fraud_labels;
-		INSERT INTO silver.fraud_labels(
+		INSERT INTO silver.fraud_labels WITH(TABLOCK) (
 			transcation_id,
 			is_fraud)
 		SELECT 
@@ -72,7 +82,7 @@ BEGIN
 
 		SET @start_time=GETDATE();
 		TRUNCATE TABLE silver.mcc_code;
-		INSERT INTO silver.mcc_code(
+		INSERT INTO silver.mcc_code WITH(TABLOCK) (
 			mcc_code,
 			description)
 		SELECT 
@@ -87,7 +97,7 @@ BEGIN
 
 		SET @start_time=GETDATE();
 		TRUNCATE TABLE silver.transactions_data;
-		INSERT INTO silver.transactions_data(
+		INSERT INTO silver.transactions_data WITH(TABLOCK) (
 			id,
 			date,
 			client_id,
@@ -120,7 +130,7 @@ BEGIN
 
 		SET @start_time=GETDATE();
 		TRUNCATE TABLE silver.users_data;
-		INSERT INTO silver.users_data(
+		INSERT INTO silver.users_data WITH(TABLOCK) (
 			id,
 			current_age,
 			retirement_age,
@@ -161,7 +171,7 @@ BEGIN
 		PRINT'========================================================='
 		END TRY
 		BEGIN CATCH
-			PRINT 'ERROR OCCURED DURING LOADING BRONZE LAYER'
+			PRINT 'ERROR OCCURED DURING LOADING SILVER LAYER'
 			PRINT 'ERROR MESSAGE'+ ERROR_MESSAGE()
 			PRINT 'ERROR NUMBER' + CAST(ERROR_NUMBER() AS NVARCHAR)
 			PRINT 'ERROR STATE' + CAST(ERROR_STATE() AS NVARCHAR)
