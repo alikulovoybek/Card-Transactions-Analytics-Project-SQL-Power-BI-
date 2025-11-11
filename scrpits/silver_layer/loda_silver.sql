@@ -106,6 +106,7 @@ BEGIN
 			use_chip,
 			merchant_id,
 			merchant_city,
+			merchant_country,
 			merchant_state,
 			zip,
 			mcc,
@@ -119,7 +120,16 @@ BEGIN
 			TRIM(use_chip) use_chip,
 			merchant_id,
 			merchant_city,
-			ISNULL(merchant_state,'N/A') merchant_state,
+			CASE 
+				WHEN LEN(merchant_state)=2 THEN merchant_state
+				WHEN merchant_state IS NULL THEN 'Unknown'
+				ELSE merchant_city
+			END merchant_state,
+			CASE 
+				WHEN LEN(merchant_state)=2 THEN 'USA'
+				WHEN merchant_state IS NULL THEN 'Unknown'
+				ELSE merchant_state
+			END merchant_country,
 			ISNULL(RIGHT('00000'+REPLACE(zip,'.0',''),5),'N/A') as zip,
 			mcc,
 			ISNULL(errors,'N/A') errors
