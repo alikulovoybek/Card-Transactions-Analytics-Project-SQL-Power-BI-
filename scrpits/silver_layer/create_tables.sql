@@ -66,10 +66,11 @@ BEGIN
 			use_chip NVARCHAR(70),
 			merchant_id INT,
 			merchant_city NVARCHAR(50),
-			merchant_state NVARCHAR(10),
-			zip INT,
+			merchant_state NVARCHAR(50),
+			merchant_country NVARCHAR(50),
+			zip NVARCHAR(10),
 			mcc INT,
-			errors NVARCHAR(50),
+			errors NVARCHAR(100),
 			dwh_create_date DATETIME2 DEFAULT GETDATE()
 			);
 
