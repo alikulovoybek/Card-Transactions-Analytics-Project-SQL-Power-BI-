@@ -47,9 +47,6 @@ BEGIN
 		merchant_state NVARCHAR(50),
 		merchant_country NVARCHAR(50),
 		zip NVARCHAR(10),
-		category_id INT,
-		category_description NVARCHAR(100),
-		fraud_comitted NVARCHAR(10)
 		);
 
 
