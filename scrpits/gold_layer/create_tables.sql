@@ -54,12 +54,14 @@ BEGIN
 		DROP TABLE gold.fact_transactions;
 	CREATE TABLE gold.fact_transactions (
 		transaction_id INT,
-		customer_key INT,
-		card_key INT,
-		merchant_key INT,
+		customer_id INT,
+		card_id INT,
+		merchant_id INT,
 		transaction_amount DECIMAL(10,2),
 		transaction_date DATETIME,
+		transaction_description NVARCHAR(200),
 		transaction_method NVARCHAR(50),
-		transaction_error NVARCHAR(100));
+		transaction_error NVARCHAR(100),
+		fraud_comitted NVARCHAR(200));
 END;
 
