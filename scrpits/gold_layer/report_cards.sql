@@ -1,3 +1,17 @@
+/*****************************************************************
+Purpose: This report consolidates key cards metrics and behaviors
+
+Highlights:
+	1. Gathers essential fields(columns)
+	2. Segments cards into categories (No transactins,Premium,Super Premium, Regular,New).
+	3. Aggregates customer-level metrics:
+		- total transaction
+		- total transaction amount
+		- lifespan (in months)
+	4. Calculates valuable KPIs:
+		- average transaction value
+		- average monthly transaction
+*****************************************************************/
 CREATE OR ALTER VIEW gold.report_cards AS 
 WITH base_query AS (
 	SELECT 
