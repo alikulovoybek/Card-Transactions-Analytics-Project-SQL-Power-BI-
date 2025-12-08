@@ -8,10 +8,8 @@ I worked on both **Data Engineering** and **Data Analytics** parts of the projec
 
 ## 🔗 Power BI Report
 
-You can view the interactive Power BI dashboard here:
+[👉 View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2ZlMjA0NzktMzdhZC00MmU1LTlhODMtYTk1MjVhYjA5YzFmIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9)
 
-**Live Power BI Report:**  
-[https://app.powerbi.com/view?r=eyJrIjoiM2ZlMjA0NzktMzdhZC00MmU1LTlhODMtYTk1MjVhYjA5YzFmIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9]
 ---
 
 ## 🏗️ Data Warehouse (SQL)
