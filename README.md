@@ -46,6 +46,8 @@ I built these dashboards:
 - Transaction method analysis
 - Age group analysis
 
+![Page_1](Page_1.png)
+
 ### 2. Customer Behavior Dashboard
 - Total customers
 - Active customers
@@ -54,6 +56,8 @@ I built these dashboards:
 - Gender and age distribution
 - Detailed customer table
 
+![Page_2](Page_2.png)
+
 ### 3. Cards Performance Dashboard
 - Card brand market share
 - Trend by card brand
@@ -61,6 +65,7 @@ I built these dashboards:
 - Card type usage
 - Transaction method comparison
 
+![Page_3](Page_3.png)
 ---
 
 ## 📌 Skills Demonstrated
