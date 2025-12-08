@@ -76,7 +76,7 @@ I built these dashboards:
 - Geographic distribution of merchants using map visuals
 
 ![Page_4](docs/images/Page_4.png)
-
+---
 
 
 ## 📌 Skills Demonstrated
