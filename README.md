@@ -66,7 +66,18 @@ I built these dashboards:
 - Transaction method comparison
 
 ![Page_3](docs/images/Page_3.png)
----
+
+### 4. Merchants Performance Dashboard
+- Transaction trends by merchant categories
+- Top performing merchant categories
+- City-level merchant performance
+- Transaction volumes and total amounts per merchant
+- Merchant lifecycle segmentation (New, Regular, Premium)
+- Geographic distribution of merchants using map visuals
+
+![Page_4](docs/images/Page_4.png)
+
+
 
 ## 📌 Skills Demonstrated
 
