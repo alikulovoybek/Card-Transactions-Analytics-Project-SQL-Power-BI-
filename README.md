@@ -14,6 +14,8 @@ First, I created a Data Warehouse in SQL using a layered approach:
 - **Silver Layer** – Cleaned and standardized data  
 - **Gold Layer** – Final analytics-ready tables (fact and dimension tables)
 
+![Overview Data Warehouse](Overview_DataWarehouse.png)
+
 Tables created:
 - Fact table: `fact_transactions`
 - Dimension tables:
