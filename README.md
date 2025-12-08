@@ -6,12 +6,6 @@ I worked on both **Data Engineering** and **Data Analytics** parts of the projec
 
 ---
 
-## 🔗 Power BI Report
-
-[👉 View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2ZlMjA0NzktMzdhZC00MmU1LTlhODMtYTk1MjVhYjA5YzFmIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9)
-
----
-
 ## 🏗️ Data Warehouse (SQL)
 
 First, I created a Data Warehouse in SQL using a layered approach:
@@ -82,6 +76,12 @@ I built these dashboards:
 - Geographic distribution of merchants using map visuals
 
 ![Page_4](docs/images/Page_4.png)
+---
+
+## 🔗 Power BI Report
+
+[👉 View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2ZlMjA0NzktMzdhZC00MmU1LTlhODMtYTk1MjVhYjA5YzFmIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9)
+
 ---
 
 
