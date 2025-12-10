@@ -112,3 +112,15 @@ This project shows my skills in:
 In this project, I designed a full data pipeline, built a structured data warehouse, and developed interactive dashboards to analyze financial transaction data.
 
 This project reflects real-world tasks performed by both **Data Engineers** and **Data Analysts**.
+
+---
+
+## Dataset
+
+The original dataset used in this project is large and cannot be stored directly on GitHub due to file size limits.
+
+This repository includes a smaller **sample dataset** for demonstration purposes.
+
+If you would like access to the full dataset, you can download it here:  
+👉 [Download Full Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets)
+
