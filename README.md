@@ -1,4 +1,4 @@
-# 📊 Financial Transactions Dashboard (SQL - Power BI)
+# 📊 Card Transactions Analytics Project (SQL + Power BI)
 
 This project demonstrates how I built a complete data analytics pipeline starting from raw data, creating a data warehouse in SQL, and visualizing insights using Power BI.
 
