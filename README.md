@@ -23,9 +23,6 @@ The data pipeline follows a Medallion Architecture:
 - Customer Behavior Analysis
 - Card Performance Analytics
 - Merchants Performance Dashboard
- ## 🔗 Power BI Report
-
-[👉 View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2ZlMjA0NzktMzdhZC00MmU1LTlhODMtYTk1MjVhYjA5YzFmIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9) 
 
 ### Tools & Technologies
 
@@ -42,6 +39,9 @@ The data pipeline follows a Medallion Architecture:
 - Card usage performance
 - Fraud analysis metrics
 
+ ## 🔗 Power BI Report
+
+[👉 View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2ZlMjA0NzktMzdhZC00MmU1LTlhODMtYTk1MjVhYjA5YzFmIiwidCI6ImM5NDI0M2ViLTZmMGUtNDU2Ni1hMjk2LWI1ZGZjOWQyNTczYiIsImMiOjh9) 
 
 
 ### 1. Global Transactions Dashboard
